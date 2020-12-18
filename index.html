@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Travel</title>
+        <link rel="stylesheet" href="stylefonts.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="iconmoon.css">
+        <!--Шрифты Google Fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet"> 
+        <!--Шрифты fontawesome-->
+       <script src="https://use.fontawesome.com/e31e66425c.js"></script>
+        <!--jQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!--slick slider-->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>   
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <!--ddslick-->
+        <script type="text/javascript" src="https://cdn.rawgit.com/prashantchaudhary/ddslick/master/jquery.ddslick.min.js" ></script>
+        
+        <script src="script.js"></script>
+    </head>
+    
+    <body>
+        <header>
+        <div class="header_top">
+            <div class="container top-header">  
+               <div class="top-header__left">
+                   <a class="top-header__phone" href="tel:+62867636738">+628-6763-6738</a>
+                   <a class="top-header__mail" href="mailto: info@visit_bahari.co">@visit_bahari.co</a>
+               </div>
+               <div class="top-header__right">
+                
+                <div class="top-header__dropdown dropdown-country">
+                    <label class="dropdown-country__label">
+                    <select class="dropdown-country__select">
+                        <option value="0" checked>Indonesia</option>
+                        <option value="1">Belarus</option>
+                        <option value="2">Russia</option>
+                        <option value="3">Ukraine</option>
+                    </select>
+                    </label>
+                </div>                    
+                    <select id="dropdown-country__select">
+                        <option value="0" data-imagesrc="images/indonesia.svg" checked>Indonesia</option>
+                        <option value="1" data-imagesrc="images/by.svg">Belarus</option>
+                        <option value="2" data-imagesrc="images/russia.svg">Russia</option>
+                        <option value="3" data-imagesrc="images/ukraine.svg">Ukraine</option>
+                    </select>
+                    
+                    
+                    
+
+               </div>
+           </div>
+        </div>
+           <div class="header_bottom">
+            <div class="container bottom-header">  
+               <div class="bottom-header__left">
+                   <div class="logo">
+                       <a href=""><img src="images/logo.gif" alt=""></a>
+                   </div>
+                    <div class="burger-menu__burger">
+                        <span class="burger-menu__line burger-menu__line_1"></span>
+                        <span class="burger-menu__line burger-menu__line_2"></span>
+                        <span class="burger-menu__line burger-menu__line_3"></span>
+                        <span class="burger-menu__line burger-menu__line_4"></span>
+                    </div>
+               </div>
+               <div class="bottom-header__right">
+                <nav class="bottom-header__menu">
+                    <ul>
+                        <li><a class="bottom-header__link" href="">Beranda</a></li>
+                        <li><a href="">Destinasi</a></li>
+                        <li><a href="">Galeri</a></li>
+                        <li><a href="">Tentang Kami</a></li>
+                        <li><a href="">Kontak</a></li>
+                    </ul>
+                </nav>
+                <form class="bottom-header__search search" action="" method="get">
+                    <button class="search__btn" type="submit"><span class="icon-search"></span></button>
+                    <input class="search__row" name="search" placeholder="Cari disini..." type="search">
+                </form>     
+               </div>
+           </div>
+        </div>
+        </header>
+        <section class="mainscreen">
+            <div class="container">
+               <div class="mainscreen-body">
+                    <h1 class="mainscreen-title title">Wisata Dengan  Rekomendasi Terbaik </h1>
+                    <p class="mainscreen-text text">Kami menyediakan rekomendasi wisata pilihan terbaik untuk anda,dan pilihan wisata yang beda dari yang lain</p>
+                    <a class="btn" href="">AYO MULAI</a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="advantage">
+        <div class="container">
+           <div class="advantage__content">
+            <h2 class="advantage__title section-title">Apa yang anda <span>dapatkan?</span><div class="line"></div></h2>
+            <div class="advantage__body">
+                <article class="advantage__item item-advantage"> 
+                    <div class="item-advantage__row">
+                    <div class="item-advantage__empty"></div>
+                    <h3 class="item-advantage__title">Rekomendasi Jasa</h3>
+                    </div>
+                    <div class="item-advantage__row">
+                        <div class="item-advantage__icon">
+                            <img src="images/quality.gif" alt="">
+                        </div>
+                        <p class="item-advantage__text">Rekomendasi jasa dan wisata yang menarik</p>
+                    </div>
+                </article>
+                <article class="advantage__item item-advantage"> 
+                    <div class="item-advantage__row">
+                    <div class="item-advantage__empty"></div>
+                    <h3 class="item-advantage__title">Kemudahan Akses</h3>
+                    </div>
+                    <div class="item-advantage__row">
+                        <div class="item-advantage__icon">
+                            <img src="images/wipes.gif" alt="">
+                        </div>
+                        <p class="item-advantage__text">Kemudahan akses yang mempermudah anda</p>
+                    </div>
+                </article>
+                <article class="advantage__item item-advantage"> 
+                    <div class="item-advantage__row">
+                    <div class="item-advantage__empty"></div>
+                    <h3 class="item-advantage__title">Negosiasi</h3>
+                    </div>
+                    <div class="item-advantage__row">
+                        <div class="item-advantage__icon">
+                            <img src="images/handshake.gif" alt="">
+                        </div>
+                        <p class="item-advantage__text">Fitur negosiasi pemesanan wisata dengan syarat dan ketentuan yang ada</p>
+                    </div>
+                </article>
+                </div>
+            </div>
+        </div>
+        </section>
+        
+
+        <section class="cutaway">
+        <div class="container">
+        <div class="cutaway__body">
+            <div class="cutaway__left">
+               <figure>
+                   <div class="cutaway__line_long"></div>
+                   <div class="cutaway__pic"><img src="images/cutaway-pic.jpg" alt=""/></div>
+                   <figcaption class="cutaway__name"><div class="cutaway__desc"><div class="cutaway__line"></div>TARI<br> KECAK</div></figcaption>
+               </figure>
+            </div>
+            <div class="cutaway__right">
+                <h2 class="title cutaway__title">Selamat datang di<br><span>Visit Bahari</span><p class="cutaway__shadow">Visit<br/>Bahari</p></h2>
+                <p class="cutaway__text">Menampilkan kekayaan alam indonesia dengan  keanekaragamannya,dengan berbagai macam wisata yang ada di dalamnya.Dan semua provinsi yang ada di nusantara kami rekomendasikan wisata yang ada </p>
+            </div>
+        </div>
+        </div>
+        </section>
+        <section class="sorting">
+        <div class="container">
+        <div class="sorting__content">
+        <div class="sorting__row1">
+           <h2 class="title sorting__title">Cari rekomendasi tempat wisata <span>terbaik</span><p class="sorting__shadow">Cari</p></h2>
+           
+           <div class="sorting__line-big"></div>
+        </div>
+           <form class="sorting__body" action="" method="get">
+               <div class="sorting__search-container">
+                <div class="sorting__search search">
+                    <button class="search__btn" type="submit"></button>
+                    <input class="search__row" id="sorting-search__row" name="search" placeholder="Papua" type="search">
+                </div>
+                </div>
+                <table class="sorting__list">
+                    <tr>
+                        <td>
+                           <div class="sorting__item">
+                                <input type="radio" id="place1"
+                                 name="places" value="aceh" class="place-link">
+                                <label for="place1">Aceh</label>
+                            </div> 
+                        </td>
+                        <td>
+                            <div class="sorting__item">
+                                <input type="radio" id="place7"
+                                 name="places" value="jawaTengah" class="place-link">
+                                <label for="place7">Jawa Tengah</label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="sorting__item">
+                                <input type="radio" id="place13"
+                                 name="places" value="kalimantanTimur" class="place-link">
+                                <label for="place13">Kalimantan Timur</label>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                           <div class="sorting__item">
+                                <input type="radio" id="place2"
+                                 name="places" value="sumatraUtara" class="place-link">
+                                <label for="place2">Sumatra Utara</label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="sorting__item">
+                                <input type="radio" id="place8"
+                                 name="places" value="jawaBarat" class="place-link">
+                                <label for="place8">Jawa Barat</label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="sorting__item">
+                                <input type="radio" id="place14"
+                                 name="places" value="nusaTenggaraBarat" class="place-link">
+                                <label for="place14">Nusa Tenggara Barat</label>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                           <div class="sorting__item">
+                                <input type="radio" id="place3"
+                                 name="places" value="sumatraBarat" class="place-link">
+                                <label for="place3">Sumatra Barat</label>
+                            </div> 
+                        </td>
+                        <td>
+                            <div class="sorting__item">
+                                <input type="radio" id="place9"
+                                 name="places" value="banten" class="place-link">
+                                <label for="place9">Banten</label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="sorting__item">
+                                <input type="radio" id="place15"
+                                 name="places" value="gorontalo" class="place-link">
+                                <label for="place15">Gorontalo</label>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                           <div class="sorting__item">
+                                <input type="radio" id="place4"
+                                 name="places" value="riau" class="place-link">
+                                <label for="place4">Riau</label>
+                            </div> 
+                        </td>
+                        <td>
+                            <div class="sorting__item">
+                                <input type="radio" id="place10"
+                                 name="places" value="yogyakarta" class="place-link">
+                                <label for="place10">Yogyakarta</label>
+                            </div>
+                        </td>
+                        <td>   
+                            <div class="sorting__item">
+                                <input type="radio" id="place16"
+                                 name="places" value="sulawesiBarat" class="place-link">
+                                <label for="place16">Sulawesi Barat</label>
+                            </div>  
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>
+                           <div class="sorting__item">
+                                <input type="radio" id="place5"
+                                 name="places" value="jambi" class="place-link">
+                                <label for="place5">Jambi</label>
+                            </div> 
+                        </td>
+                        <td>
+                            <div class="sorting__item">
+                                <input type="radio" id="place11"
+                                 name="places" value="bali" class="place-link">
+                                <label for="place11">Bali</label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="sorting__item">
+                                <input type="radio" id="place17"
+                                 name="places" value="maluku" class="place-link">
+                                <label for="place17">Maluku</label>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                           <div class="sorting__item">
+                                <input type="radio" id="place6"
+                                 name="places" value="lampung" class="place-link">
+                                <label for="place6">Lampung</label>
+                            </div> 
+                        </td>
+                        <td>
+                            <div class="sorting__item">
+                                <input type="radio" id="place12"
+                                 name="places" value="papua" class="place-link" checked>
+                                <label for="place12">Papua</label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="sorting__item">
+                                <input type="radio" id="place18"
+                                 name="places" value="malukuUtara" class="place-link">
+                                <label for="place18">Maluku Utara</label>
+                            </div>
+                        </td>
+                    </tr>             
+
+                </table>
+            </form> 
+            <div class="sorting__line-small"></div>
+            </div>
+            </div> 
+            
+            <div class="sorting__slider slider-sorting">
+             <div class="papua">
+              <figure>
+                   <div class="slider-sorting__pic"><img src="images/slider-pic1.jpg" alt=""/></div>
+                   <figcaption class="sorting__name">Raja Ampat<div class="sorting__decor"></div></figcaption>   
+               </figure>
+            </div>
+            <div class="papua">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/slider-pic2.jpg" alt=""/></div>
+                   <figcaption class="sorting__name">Puncak Jaya<div class="sorting__decor"></div></figcaption>
+                   
+               </figure>
+            </div>
+            <div class="papua">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/slider-pic3.jpg" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="papua">  
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/slider-pic4.jpg" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            
+            
+            <div class="papua">
+              <figure>
+                   <div class="slider-sorting__pic"><img src="images/slider-pic1.jpg" alt=""/></div>
+                   <figcaption class="sorting__name">Raja Ampat<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="jawaTengah">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place11.png" alt=""/></div>
+                   <figcaption class="sorting__name">Puncak Jaya<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="jawaTengah">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place12.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="kalimantanTimur">  
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/slider-pic4.jpg" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="kalimantanTimur">  
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/slider-pic4.jpg" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="kalimantanTimur">  
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/slider-pic4.jpg" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="kalimantanTimur">  
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/slider-pic4.jpg" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="kalimantanTimur">  
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/slider-pic4.jpg" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            
+            <div class="aceh">
+              <figure>
+                   <div class="slider-sorting__pic"><img src="images/place1.png" alt=""/></div>
+                   <figcaption class="sorting__name">Raja Ampat<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="aceh">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place2.png" alt=""/></div>
+                   <figcaption class="sorting__name">Puncak Jaya<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="aceh">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place3.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="aceh">  
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place4.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            
+            <div class="aceh">
+              <figure>
+                   <div class="slider-sorting__pic"><img src="images/place5.png" alt=""/></div>
+                   <figcaption class="sorting__name">Raja Ampat<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="sumatraUtara">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place6.png" alt=""/></div>
+                   <figcaption class="sorting__name">Puncak Jaya<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="sumatraUtara">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place6.png" alt=""/></div>
+                   <figcaption class="sorting__name">Puncak Jaya<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="sumatraUtara">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place6.png" alt=""/></div>
+                   <figcaption class="sorting__name">Puncak Jaya<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="sumatraUtara">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place6.png" alt=""/></div>
+                   <figcaption class="sorting__name">Puncak Jaya<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="jawaBarat">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place7.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="jawaBarat">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place7.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="jawaBarat">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place7.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="jawaBarat">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place7.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="jawaBarat">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place7.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="nusaTenggaraBarat">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place8.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="nusaTenggaraBarat">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place8.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="nusaTenggaraBarat">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place8.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="nusaTenggaraBarat">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place8.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="nusaTenggaraBarat">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place8.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="banten">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place2.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="banten">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place2.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="banten">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place2.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="banten">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place2.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="gorontalo">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place3.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="gorontalo">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place3.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="gorontalo">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place3.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="gorontalo">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place3.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="gorontalo">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place3.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="riau">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place4.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="riau">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place4.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="riau">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place4.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="riau">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place4.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="riau">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place4.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="yogyakarta">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place5.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="yogyakarta">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place5.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk</figcaption>
+               </figure>
+            </div>
+            <div class="yogyakarta">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place5.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="yogyakarta">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place5.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="yogyakarta">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place5.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="yogyakarta">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place5.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            
+            <div class="sumatraBarat">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place6.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="sumatraBarat">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place1.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="sumatraBarat">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place1.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="sumatraBarat">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place1.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="sumatraBarat">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place1.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="sulawesiBarat">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place6.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="sulawesiBarat">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place6.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="sulawesiBarat">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place6.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="sulawesiBarat">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place6.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="sulawesiBarat">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place6.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="jambi">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place9.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="jambi">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place9.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="jambi">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place9.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="jambi">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place9.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="jambi">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place9.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="bali">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place10.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="bali">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place10.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="bali">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place10.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="bali">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place10.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="bali">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place10.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="bali">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place10.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            
+            <div class="maluku">  
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place11.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="maluku">  
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place11.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="maluku">  
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place11.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="maluku">  
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place11.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="maluku">  
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place11.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="maluku">  
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place11.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            
+            <div class="lampung">
+              <figure>
+                   <div class="slider-sorting__pic"><img src="images/place12.png" alt=""/></div>
+                   <figcaption class="sorting__name">Raja Ampat<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="lampung">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place12.png" alt=""/></div>
+                   <figcaption class="sorting__name">Puncak Jaya<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="lampung">
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place12.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="lampung">  
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place12.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="lampung">  
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place12.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="malukuUtara">  
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place1.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="malukuUtara">  
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place1.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="malukuUtara">  
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place1.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="malukuUtara">  
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place1.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            <div class="malukuUtara">  
+               <figure>
+                   <div class="slider-sorting__pic"><img src="images/place1.png" alt=""/></div>
+                   <figcaption class="sorting__name">Gili Manuk<div class="sorting__decor"></div></figcaption>
+               </figure>
+            </div>
+            
+   
+            </div>
+              
+               
+           
+        </section>
+        
+        
+        <section class="photo">
+          <div class="container">
+           <h2 class="title center__title">Keragaman <span>Indonesia</span></h2>
+       
+                <div class="tab-wrapper">
+                    <input type="radio" name="tab" id="tab1" checked>
+                    <label for="tab1" class="tab-label" nth="1">Flora & Fauna</label>
+                    <div class="tab-item" id="tab-content1">
+                        <div class="tab-body">
+                            <div class="tabs-pic">
+                                <img src="images/tabs-img1.png" alt="">
+                            </div>
+                            <div class="tabs-pic">
+                                <img src="images/tabs-img2.png" alt="">
+                            </div>
+                            <div class="tabs-pic">
+                                <img src="images/tabs-img3.png" alt="">
+                            </div>
+                            <div class="tabs-pic">
+                                <img src="images/tabs-img4.png" alt="">
+                            </div>
+                            <div class="tabs-pic">
+                                <img src="images/tabs-img5.png" alt="">
+                            </div>
+                            <div class="tabs-pic">
+                                <img src="images/tabs-img6.png" alt="">
+                            </div>
+                            <div class="tabs-pic">
+                                <img src="images/tabs-img7.png" alt="">
+                            </div>
+                            <div class="tabs-pic">
+                                <img src="images/tabs-img8.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+            
+                    <input type="radio" name="tab" id="tab2">
+                    <label for="tab2" class="tab-label" nth="2">Tarian</label>
+                    <div class="tab-item" id="tab-content2">
+                        <div class="tab-body">
+                            <div class="tabs-pic">
+                                <img src="images/tabs-img3.png" alt="">
+                            </div>
+                            <div class="tabs-pic">
+                                <img src="images/tabs-img3.png" alt="">
+                            </div>
+                            <div class="tabs-pic">
+                                <img src="images/tabs-img3.png" alt="">
+                            </div>
+                            <div class="tabs-pic">
+                                <img src="images/tabs-img3.png" alt="">
+                            </div>
+                            <div class="tabs-pic">
+                                <img src="images/tabs-img3.png" alt="">
+                            </div>
+                            <div class="tabs-pic">
+                                <img src="images/tabs-img3.png" alt="">
+                            </div>
+                            <div class="tabs-pic">
+                                <img src="images/tabs-img3.png" alt="">
+                            </div>
+                            <div class="tabs-pic">
+                                <img src="images/tabs-img3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+            
+                    <input type="radio" name="tab" id="tab3">
+                    <label for="tab3" class="tab-label" nth="3">Adat</label>
+                    <div class="tab-item" id="tab-content3">
+                        <div class="tab-body">
+                            <div class="tabs-pic">
+                                <img src="images/tabs-img5.png" alt="">
+                            </div>
+                            <div class="tabs-pic">
+                                <img src="images/tabs-img5.png" alt="">
+                            </div>
+                            <div class="tabs-pic">
+                                <img src="images/tabs-img5.png" alt="">
+                            </div>
+                            <div class="tabs-pic">
+                                <img src="images/tabs-img5.png" alt="">
+                            </div>
+                            <div class="tabs-pic">
+                                <img src="images/tabs-img5.png" alt="">
+                            </div>
+                            <div class="tabs-pic">
+                                <img src="images/tabs-img5.png" alt="">
+                            </div>
+                            <div class="tabs-pic">
+                                <img src="images/tabs-img5.png" alt="">
+                            </div>
+                            <div class="tabs-pic">
+                                <img src="images/tabs-img5.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <input type="radio" name="tab" id="tab4">
+                    <label for="tab4" class="tab-label" nth="4">Suku</label>
+                    <div class="tab-item" id="tab-content2">
+                       <div class="tab-body">
+                            <div class="tabs-pic">
+                                <img src="images/tabs-img2.png" alt="">
+                            </div>
+                            <div class="tabs-pic">
+                                <img src="images/tabs-img2.png" alt="">
+                            </div>
+                            <div class="tabs-pic">
+                                <img src="images/tabs-img2.png" alt="">
+                            </div>
+                            <div class="tabs-pic">
+                                <img src="images/tabs-img2.png" alt="">
+                            </div>
+                            <div class="tabs-pic">
+                                <img src="images/tabs-img2.png" alt="">
+                            </div>
+                            <div class="tabs-pic">
+                                <img src="images/tabs-img2.png" alt="">
+                            </div>
+                            <div class="tabs-pic">
+                                <img src="images/tabs-img2.png" alt="">
+                            </div>
+                            <div class="tabs-pic">
+                                <img src="images/tabs-img2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+            
+                    <input type="radio" name="tab" id="tab5">
+                    <label for="tab5" class="tab-label" nth="5">Kuliner</label>
+                    <div class="tab-item" id="tab-content3">
+                        <div class="tab-body">
+                            <div class="tabs-pic">
+                                <img src="images/tabs-img7.png" alt="">
+                            </div>
+                            <div class="tabs-pic">
+                                <img src="images/tabs-img7.png" alt="">
+                            </div>
+                            <div class="tabs-pic">
+                                <img src="images/tabs-img7.png" alt="">
+                            </div>
+                            <div class="tabs-pic">
+                                <img src="images/tabs-img7.png" alt="">
+                            </div>
+                            <div class="tabs-pic">
+                                <img src="images/tabs-img7.png" alt="">
+                            </div>
+                            <div class="tabs-pic">
+                                <img src="images/tabs-img7.png" alt="">
+                            </div>
+                            <div class="tabs-pic">
+                                <img src="images/tabs-img7.png" alt="">
+                            </div>
+                            <div class="tabs-pic">
+                                <img src="images/tabs-img7.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+    
+         </div>   
+        </section>
+        
+        <section class="comment">
+        <div class="container">
+           <h2 class="title center__title"><span class="quotes">&#8220;</span>Pendapat Mereka Tentang<br/><span>Visit Bahari</span></h2>
+           <div class="comment__slider">
+                <div class="comment__item">
+                    <blockquote>“Rekomendasi Wisatanya menarik,pelayanannya pun bagus saya senang dengan kualitas seperti in,<br/>Terima kasih Visit Bahari”</blockquote>
+                    <div class="comment__avatar">
+                        <img src="images/avatar1.png" alt="">
+                    </div>
+                    <p class="comment__name">Dicky Indrayan</p>
+                    <p class="comment__country">Purwokerto, Indonesia</p>
+                </div>
+                <div class="comment__item">
+                    <blockquote>“Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br/>Terima kasih Visit Bahari”</blockquote>
+                    <div class="comment__avatar">
+                        <img src="images/avatar2.png" alt="">
+                    </div>
+                    <p class="comment__name">Dicky Indrayan</p>
+                    <p class="comment__country">Purwokerto, Indonesia</p>
+                </div>
+                <div class="comment__item">
+                    <blockquote>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br/>Terima kasih Visit Bahari”</blockquote>
+                    <div class="comment__avatar">
+                        <img src="images/avatar3.png" alt="">
+                    </div>
+                    <p class="comment__name">Dicky Indrayan</p>
+                    <p class="comment__country">Purwokerto, Indonesia</p>
+                </div>
+            </div>  
+        </div>   
+        </section>
+        <footer class="footer">
+            <div class="foooter__top top-footer">
+              <div class="top-footer__content container">
+               <h2 class="top-footer__title">Dapatkan informasi terbaru dari kami</h2>
+               <form class="top-footer__search search" action="" method="get">
+                    <input class="search__row" name="search" placeholder="Ketikkan email anda..." type="search">
+                    <button class="top-footer__btn" type="submit">Berlangganan</button>
+                </form>
+            </div>
+            </div>
+            <div class="container">
+            <div class="footer__body body-footer">
+                <div class="body-footer__item">
+                    <div class="body-footer__logo">
+                        <img src="images/logo-footer.png" alt="">
+                    </div>
+                    <div class="body-footer__text">
+                        <p>Visit Bahari merupakan website yang menampilkan keanekaragaman budaya di Indonesia dengan pilihan wisata rekomendasi untuk anda</p>
+                    </div>
+                </div>
+                <div class="body-footer__item">
+                    <h2 class="body-footer__title">Bantuan</h2>
+                    <ul>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Terms of Use</a></li>
+                        <li><a href="">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="body-footer__item">
+                    <h2 class="body-footer__title">Kerjasama Klien</h2>
+                    <div class="body-footer__customers">
+                        <div class="body-footer__customer">
+                            <img src="images/footer-logo1.gif" alt="">
+                        </div>
+                        <div class="body-footer__customer">
+                            <img src="images/footer-logo2.gif" alt="">
+                        </div>
+                        <div class="body-footer__customer">
+                            <img src="images/footer-logo3.gif" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="body-footer__item">
+                    <h2 class="body-footer__title">Informasi Kontak</h2>
+                    <address>
+                        <p class="body-footer__address">l.DI Panjaitan No 128 Purwokerto</p>
+                       <a href="tel:+6285786860530">+62-8578-6860-530</a><br/>
+                       <a href="mailto:info@visit_bahari.co">@visit_bahari.co</a> 
+                       <div class="body-footer__socials">
+                          <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                          <i class="fa fa-facebook  fa-2x" aria-hidden="true"></i>
+                          <i class="fa fa-instagram  fa-2x" aria-hidden="true"></i>
+                       </div>
+                    </address>
+                </div>
+            </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__bottom__copyright"><sup>©</sup>CopyRight Visit Bahari.Since 2018</div>
+            </div>
+        
+        </footer>
+    
+    </body>  
+    
+</html>
