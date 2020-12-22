@@ -1,6 +1,3 @@
-# visit-bahari
- project 11
-
 <h1 align="center">Главная страница сайта "Visit Bahari"</h1>
 
 DEMO [Visit Bahari](https://zena86.github.io/visit-bahari/)
