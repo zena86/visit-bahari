@@ -24,9 +24,7 @@ CSS3/SCSS|            |ddSlick     |Font Awesome    |Adobe Photoshop|           
 **2. Бургер-меню**
 
 ![Screenshort 1](/images/imgreadme/screen-menu1.png)|![Screenshort 1](/images/imgreadme/screen-menu2.png)
-----------------------------------------------------------|-----------------------------------------------------------
-
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+----------------------------------------------------------|------------------------------------------------
 
 
 **3. Слайдер для отображения отзывов, две строки поиска **
