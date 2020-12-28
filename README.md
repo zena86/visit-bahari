@@ -2,11 +2,11 @@
 
 DEMO [Visit Bahari](https://zena86.github.io/visit-bahari/)
 
-Языки    | Библиотеки |Плагины     | Сервисы        | Инструменты   |Методология|Прочие
----------|------------|------------|----------------|---------------|-----------|-----------
-HTML5    |jQuery      |Slick Slider|Google Fonts    |Brackets       |БЭМ        |CSS flexbox
-CSS3/SCSS|            |ddSlick     |Font Awesome    |Adobe Photoshop|           |
-&nbsp;   |            |            |                |Koala v2.3.0   |           |
+Языки     | Библиотеки |Плагины     | Сервисы        | Инструменты   |Методология|Прочие
+----------|------------|------------|----------------|---------------|-----------|-----------
+HTML5     |jQuery      |Slick Slider|Google Fonts    |Brackets       |БЭМ        |CSS flexbox
+CSS3/SCSS |            |ddSlick     |Font Awesome    |Adobe Photoshop|           |
+JavaScript|            |            |                |Koala v2.3.0   |           |
 
 
 Адаптивность реализована за счет:
